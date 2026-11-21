@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 102px; */
+}
+:root {
+  --font-family: "Inter", sans-serif;
+}
+.containerMain{
+  margin-top: 6.375rem;
+  margin-inline: auto;
+  width: 68.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6.25rem;
+
+}
+.haha{ 
+  margin: 0;
+  margin-bottom: 3.75rem; 
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+  align-self: flex-start;
+}
+.input{
+  display: block;
+  /* width: 100%; */
+ border: 1px solid #000;
+width: 31.25rem;
+height: 3.75rem;
+margin-bottom: 1.875rem;
+font-size: 2rem;
+}
+.btn {
+  width: 31.25rem;
+  background: #0094ff;
+  border: none;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 2rem;
+color: #fff;
+padding: 0.5625rem 9rem 0.75rem 7.875rem;
+}
+.scroll {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 2.5rem;
+color: #000;
+margin-block:0 ;
+margin-bottom:3.125rem ;
+}
+.first {
+  align-self: self-start;
+}
+.posts{
+  
+}
+
+
