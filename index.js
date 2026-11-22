@@ -5,9 +5,11 @@ let btnNode = document.querySelector('.js__btn');
 let postsNode = document.querySelector('.js__posts');
 
 let posts = [];
-
+let save = localStorage.getItem('posts')
+if (save !== null){
+    posts = JSON.parse(save);
+}
 btnNode.addEventListener('click',function() {
-    getPost();
     savePosts();
     renderPosts();
 });
@@ -23,6 +25,7 @@ function getPost(   ) {
 }
 function savePosts(){
     posts.push(getPost()); 
+    localStorage.setItem('posts',JSON.stringify(posts));
 }
 function renderPosts() {
     let postsHTML = '';
@@ -37,3 +40,4 @@ function renderPosts() {
     });
     postsNode.innerHTML = postsHTML;
 }
+renderPosts();
